@@ -12,22 +12,22 @@ section {
 section.visible {
   opacity: 1;
   transform: translateY(0);
-  padding: 5%;
+  padding: 7%;
+  text-align: center;
 }
 
-section video{
-  position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index:-100;
-    filter: blur(10px);
-}
-
-section h1{
+h1{
   font-size: 40px;
   text-align: center;
+}
+
+h2{
+  font-size: 30px;
+  margin-bottom: 3%;
+}
+
+p{
+  font-size: 20px;
 }
 
 .first{
@@ -44,5 +44,10 @@ section h1{
 
 .fourth{
   background: linear-gradient(#2d5a2d,#1a4a1a);
+  color: rgb(173, 201, 167);
+}
+
+.fifth{
+  background: linear-gradient(#1a4a1a,#0a2a0a);
   color: rgb(173, 201, 167);
 }
