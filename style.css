@@ -1,53 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&family=Pixelify+Sans:wght@400..700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-section.visible {
+section{
   opacity: 1;
   transform: translateY(0);
   padding: 7%;
   text-align: center;
 }
 
-h1{
+h1 {
   font-size: 40px;
   text-align: center;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-h2{
+h2 {
   font-size: 30px;
   margin-bottom: 3%;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-p{
+#h2{
+  font-size: 40px;
+  margin-bottom: 3%;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 3%;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
   font-size: 20px;
+  margin-bottom: 2%;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.first{
-  background: linear-gradient(white,#6fb26f);
+.first {
+  background: linear-gradient(white, #6fb26f);
 }
 
-.second{
-  background: linear-gradient(#6fb26f,#3e8c3e);
+.second {
+  background: linear-gradient(#6fb26f, #3e8c3e);
 }
 
-.third{
-  background: linear-gradient(#3e8c3e,#2d5a2d);
+.third {
+  background: linear-gradient(#3e8c3e, #2d5a2d);
 }
 
-.fourth{
-  background: linear-gradient(#2d5a2d,#1a4a1a);
+.fourth {
+  background: linear-gradient(#2d5a2d, #1a4a1a);
   color: rgb(173, 201, 167);
 }
 
-.fifth{
-  background: linear-gradient(#1a4a1a,#0a2a0a);
+.fifth {
+  background: linear-gradient(#1a4a1a, #0a2a0a);
   color: rgb(173, 201, 167);
+}
+
+.sixth {
+  background: linear-gradient(#0a2a0a, #000000);
+  color: #ffffff;
+}
+
+.seventh {
+  background: #000000;
+  color: #ffffff;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+.seventh .project {
+  color: white;
+  font-size: 60px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.seventh .project::after {
+  content: '|';
+  animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+.seventh h3 {
+  font-size: 30px;
+}
+
+.typing-container {
+  font-size: 2rem;
+  color: #333;
+}
+
+.typing {
+  border-right: 2px solid #333;
+  padding-right: 5px;
+  animation: blink 0.75s infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
 }
